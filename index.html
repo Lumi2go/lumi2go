@@ -64,10 +64,10 @@
     <div id="reserve" class="section" style="text-align:center;">
         <h2>Reserveer LUMA</h2>
         <p>We lanceren binnenkort. Reserveer nu gratis en ontvang als eerste toegang.</p>
-<input type="hidden" name="source" id="source">
 
         <!-- STAP 3: hier komt straks Formspree -->
         <form action="https://formspree.io/f/xrejowgv" method="POST">
+<input type="hidden" name="source" id="source">
 
             <input type="email" name="email" placeholder="E-mail" required>
             <button type="submit" class="cta">Reserveer</button>
@@ -84,6 +84,15 @@
     const source = params.get('utm');
     if (source) {
         document.getElementById('source').value = source;
+    }
+</script>
+<script>
+    const hash = window.location.hash.replace('#', '');
+    const params = new URLSearchParams(hash);
+    const source = params.get('utm');
+    if (source) {
+        const field = document.getElementById('source');
+        if (field) field.value = source;
     }
 </script>
 
