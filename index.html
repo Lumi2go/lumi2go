@@ -1,10 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lumi2go</title>
+    <title>LUMA — Light for remote controls</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.5;
+        }
+        .section { padding: 80px 40px; max-width: 900px; margin: auto; }
+        h1, h2 { font-weight: 300; margin-bottom: 20px; }
+        .hero { text-align: center; padding: 120px 20px; }
+        .cta {
+            margin-top: 30px;
+            display: inline-block;
+            padding: 12px 28px;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="email"] {
+            padding: 12px;
+            width: 260px;
+            border-radius: 4px;
+            border: none;
+            margin-top: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    Hello Lumi2go
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>LUMA</h1>
+        <p>Zie elke knop. Altijd. Zonder het licht aan te doen.</p>
+        <a class="cta" href="#reserve">Reserveer LUMA</a>
+    </div>
+
+    <!-- PROBLEEM + OPLOSSING -->
+    <div class="section">
+        <h2>Het probleem</h2>
+        <p>In het donker zie je geen enkele knop op je afstandsbediening. 
+           Je zoekt op gevoel, drukt verkeerd en stoort anderen met fel licht.</p>
+
+        <h2>De oplossing</h2>
+        <p>LUMA verlicht je knoppen automatisch wanneer je de afstandsbediening oppakt. 
+           Geen gedoe. Geen lichtvervuiling. Geen frustratie.</p>
+    </div>
+
+    <!-- RESERVEER / SMOKETEST -->
+    <div id="reserve" class="section" style="text-align:center;">
+        <h2>Reserveer LUMA</h2>
+        <p>We lanceren binnenkort. Reserveer nu gratis en ontvang als eerste toegang.</p>
+
+        <!-- STAP 3: hier komt straks Formspree -->
+        <form action="#" method="POST">
+            <input type="email" name="email" placeholder="E-mail" required>
+            <button type="submit" class="cta">Reserveer</button>
+        </form>
+    </div>
+
 </body>
 </html>
