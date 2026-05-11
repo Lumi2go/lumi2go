@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>LUMA — Light for remote controls</title>
+    <title>Lumi2go — Altijd vindbaar. Altijd controle.</title>
     <style>
         body {
             margin: 0;
@@ -10,85 +10,156 @@
             font-family: Arial, sans-serif;
             background: #000;
             color: #fff;
-            line-height: 1.5;
+            line-height: 1.6;
         }
-        .section { padding: 80px 40px; max-width: 900px; margin: auto; }
-        h1, h2 { font-weight: 300; margin-bottom: 20px; }
-        .hero { text-align: center; padding: 120px 20px; }
-        .cta {
-            margin-top: 30px;
+        .section {
+            padding: 60px 24px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 24px 60px;
+        }
+        h1, h2 {
+            font-weight: 300;
+            margin-bottom: 16px;
+        }
+        p {
+            margin: 8px 0;
+        }
+        .cta-primary, .cta-secondary {
             display: inline-block;
             padding: 12px 28px;
-            background: #fff;
-            color: #000;
-            text-decoration: none;
             border-radius: 4px;
             border: none;
             cursor: pointer;
+            font-size: 15px;
+            margin-top: 16px;
+        }
+        .cta-primary {
+            background: #fff;
+            color: #000;
+        }
+        .cta-secondary {
+            background: transparent;
+            color: #fff;
+            border: 1px solid #555;
+        }
+        .card {
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 24px;
+            margin-top: 24px;
+        }
+        .label {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #aaa;
+            margin-bottom: 4px;
         }
         input[type="email"] {
-            padding: 12px;
-            width: 260px;
+            width: 100%;
+            max-width: 320px;
+            padding: 10px 12px;
             border-radius: 4px;
             border: none;
-            margin-top: 10px;
+            margin: 12px 0;
+        }
+        .price-row {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+        .price-row span {
+            display: inline-block;
+            margin-right: 12px;
+        }
+        small {
+            color: #aaa;
+            font-size: 12px;
         }
     </style>
 </head>
-
 <body>
 
     <!-- HERO -->
     <div class="hero">
-    <h1>LUMA</h1>
-    <p>Zie elke knop. Altijd. Zonder het licht aan te doen.</p>
-    <a class="cta" href="#reserve?utm=free">Reserveer LUMA</a>
-        
-    <br><br>
-    <a class="cta" href="#checkout?utm=paid">Reserveer voor €9,90</a>
-</div>
+        <h1>Altijd vindbaar. Altijd controle.</h1>
+        <p>Vind je afstandsbediening direct dankzij de glow‑in‑the‑dark band,<br>
+           en verlicht de toetsen met één druk op de knop. Geen gezoek, geen foute toetsen, geen storend licht.</p>
+    </div>
 
-
-    <!-- PROBLEEM + OPLOSSING -->
+    <!-- DUAL-GLOW UITLEG -->
     <div class="section">
-        <h2>Het probleem</h2>
-        <p>In het donker zie je geen enkele knop op je afstandsbediening. 
-           Je zoekt op gevoel, drukt verkeerd en stoort anderen met fel licht.</p>
+        <h2>De “Dual‑Glow” ervaring</h2>
 
-        <h2>De oplossing</h2>
-        <p>LUMA verlicht je knoppen automatisch wanneer je de afstandsbediening oppakt. 
-           Geen gedoe. Geen lichtvervuiling. Geen frustratie.</p>
+        <p class="label">Stap 1 — Passieve glow (altijd aan)</p>
+        <p>De photofluorescente band laadt overdag op en geeft ’s avonds een zachte gloed. Zo zie je je afstandsbediening meteen liggen op de bank of het nachtkastje — zonder stroomverbruik.</p>
+
+        <p class="label">Stap 2 — Actieve spot (wanneer jij het wilt)</p>
+        <p>Eén klik op Lumi2go en je toetsen worden subtiel verlicht. Geen strooilicht in je ogen, maar een gefocuste spot op je knoppen. Met kleurinstellingen en een automatische fade‑out zodat jij je weer op de film kunt concentreren.</p>
     </div>
 
-    <!-- RESERVEER / SMOKETEST -->
-    <div id="reserve" class="section" style="text-align:center;">
-        <h2>Reserveer LUMA</h2>
-        <p>We lanceren binnenkort. Reserveer nu gratis en ontvang als eerste toegang.</p>
-
-        <!-- STAP 3: hier komt straks Formspree -->
-        <form action="https://formspree.io/f/xrejowgv" method="POST">
-<input type="hidden" name="source" id="source">
-
-            <input type="email" name="email" placeholder="E-mail" required>
-            <button type="submit" class="cta">Reserveer</button>
-        </form>
+    <!-- WAAROM LUMI2GO -->
+    <div class="section">
+        <h2>Waarom Lumi2go?</h2>
+        <p>• <strong>On‑demand verlichting</strong> — jij bepaalt wanneer het licht aangaat.<br>
+           • <strong>Photofluorescente band</strong> — altijd vindbaar in het donker.<br>
+           • <strong>Smart fade‑out</strong> — licht dooft vanzelf, rust voor je ogen en in de kamer.<br>
+           • <strong>Kleurinstellingen</strong> — kies de sfeer die bij jouw home‑cinema past.<br>
+           • <strong>Zorgeloos gebruik</strong> — batterij tot een jaar mee, eenvoudig te vervangen.</p>
     </div>
 
-<div id="checkout" class="section" style="text-align:center;">
-    <h2>Reserveer LUMA voor €9,90</h2>
-    <p>Je wordt niet aangerekend. We meten enkel interesse.</p>
-    <a class="cta" href="#reserve">Ga verder</a>
-</div>
+    <!-- GEBRUIKSGEMAK -->
+    <div class="section">
+        <h2>Gebruik in 4 stappen</h2>
+        <p>1. Hesp de band om je remote.<br>
+           2. Vind je remote direct door de oplichtende band.<br>
+           3. Klik voor licht op je toetsen.<br>
+           4. Lumi2go fade‑out automatisch terwijl jij ongestoord verder kijkt.</p>
+    </div>
 
-<script>
-    const hash = window.location.hash.replace('#', '');
-    const params = new URLSearchParams(hash);
-    const source = params.get('utm');
-    if (source) {
-        const field = document.getElementById('source');
-        if (field) field.value = source;
-    }
-</script>
+    <!-- INTERESSE (FREE) -->
+    <div class="section">
+        <div class="card">
+            <div class="label">Interesse</div>
+            <h2>Houd me op de hoogte</h2>
+            <p>De Lumi2go wordt momenteel klaargemaakt voor productie. Wil jij als eerste weten wanneer we live gaan en exclusieve updates ontvangen?</p>
+
+            <form action="https://formspree.io/f/xrejowgv" method="POST">
+                <input type="hidden" name="source" value="free">
+                <input type="email" name="email" placeholder="E‑mailadres" required>
+                <br>
+                <button type="submit" class="cta-primary">Houd me op de hoogte</button>
+            </form>
+
+            <small>Je ontvangt enkel nieuws over Lumi2go. Geen spam.</small>
+        </div>
+    </div>
+
+    <!-- PRE-ORDER (PAID INTENT) -->
+    <div class="section">
+        <div class="card">
+            <div class="label">Pre‑order intentie</div>
+            <h2>Word een Lumi2go pionier</h2>
+            <p>Laat je gegevens achter. Je hoeft nu niets te betalen. Zodra we de productie starten, sturen we je een betaallink met jouw persoonlijke 25% kortingscode.</p>
+
+            <div class="price-row">
+                <span>Normale prijs: <strong>€ 9,95</strong></span>
+                <span>Pre‑order prijs: <strong>€ 7,45</strong> (25% Early Bird korting)</span>
+            </div>
+
+            <form action="https://formspree.io/f/xrejowgv" method="POST" style="margin-top:16px;">
+                <input type="hidden" name="source" value="paid">
+                <input type="email" name="email" placeholder="E‑mailadres" required>
+                <br>
+                <button type="submit" class="cta-secondary">Claim mijn 25% korting &amp; pre‑order</button>
+            </form>
+
+            <small>Je pre‑order is een intentiesignaal. Je betaalt pas als we effectief in productie gaan.</small>
+        </div>
+    </div>
 
 </body>
 </html>
